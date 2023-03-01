@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+   
+    <head>
+        <title>Convertidor de Peso</title>
+        <script type="text/javascrip"> 
+         function convertir (){
+             var valore = parseInt(document.getElementById("valor").value);
+             var resultado =0;                       
+             var Mercurio =3.7;
+             if (document.getElementById("uno").checked){
+                 resultado = (valore*3.7);
+                 alert("La Conversion de peso es: kilogramo"+resultado);
+             }
+             else if (document.getElementById("dos").checked)
+        
+         }
+        </script>
+            
+    </head>
+    <body>
+        <h3>CONVERTIDOR DE PESO </h3>
+        <form class="Formulario">
+            <p>Seleccionar Planeta a Convertir peso:</p>
+            <input type="radio"name="Cambio"id="uno">MERCURIO
+            <input type="radio"name="Convertir"id="dos">VENUS
+            <input type="radio"name="Convertir"id="cuatro">JUPITER
+            <input type="radio"name="Convertir"id="cinco">SATURNO
+            <input type="radio"name="Convertir"id="seis">URANO
+            <input type="radio"name="Convertir"id="siete">NEPTUNO
+            <input type="radio"name="Convertir"id="ocho">PLUTON
+            <p>Ingrese Peso:</p>
+            <input type="number"id="valor" min="1"max="10000">
+            <input type="button"id="Convertidor" value="Convertir"onclick="convertir()">
+        </form>
+    </body>
+</html>
